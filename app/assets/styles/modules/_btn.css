@@ -1,0 +1,13 @@
+.btn {
+	background-color: $skyBlue;
+	color: $white;
+	text-decoration: none;
+	padding: .75rem 1.2rem;
+	display: inline-block;
+	font-weight: 400;
+
+	&--white {
+		background-color: $white;
+		color: skyBlue;
+	}
+}

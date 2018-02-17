@@ -1,0 +1,32 @@
+.site-header {
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%) scale(1.2);
+		transform-origin: 50% 0%;
+		padding: 25px 36px;
+
+		@mixin atMedium {
+			transform: translateX(-50%) scale(2);
+		}
+	}
+
+	&__logo__graphic {
+		text-indent: -999px;
+	}
+
+	&__menu-content {
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+		}
+	}
+
+}

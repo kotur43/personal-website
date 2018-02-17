@@ -2,45 +2,115 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,500i,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
 	<title>Dusan Koturovic</title>
 	<meta name="keywords" content="Web designer, Web developer,Serbia, Photoshop">
 	<meta name="description" content="I am web developer, I will create awesome websites">
+
+	<link rel="stylesheet" href="temp/styles/styles.css">
+
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
-		<img src="assets/images/logo.jpg" alt="Me">
+	<header class="site-header">
+		<div class="wrapper">
+			<div class="site-header__logo">
+        		<div class="site-header__logo__graphic icon icon--logo">Dusan Koturovic
+	        	</div>
+	    	</div>
+		    <div class="site-header__menu-content">
+				<nav class="primary-nav primary-nav--pull-right">
+					<ul>
+						<li><a href="#developer">Developer</a></li>
+			        	<li><a href="#photographer">Photographer</a></li>
+			        	<li><a href="#about">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>	
 	</header>
 
 	<div class="hello">
-		<img src="assets/images/hello-large.jpg" alt="me">
-		<h1>Hello</h1>
-		<p>Lorem ipsum bla bla hsalkdjqwoubxcjk9oir</p>
+		<picture>
+	      <source srcset="assets/images/hello--large.jpg 1920w, assets/images/hello--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+	      <source srcset="assets/images/hello--medium.jpg 1400w, assets/images/hello--medium-hi-dpi.jpg 2800w" media="(min-width: 990px)">
+	      <source srcset="assets/images/hello--small.jpg 1000w, assets/images/hello--small-hi-dpi.jpg 2000w" media="(min-width: 640px)">
+	      <img srcset="assets/images/hello--mobile.jpg 650w, assets/images/hello--mobile-hi-dpi.jpg 1300w" alt="Corfu castle" class="hello__image">
+
+    	</picture>
+
+    	<div class="hello__text-content">
+    		<div class="wrapper">
+	    		<h2 class="hello__title">Welcome</h2>
+				<h3 class="hello__subtitle">My name is Dusan Koturovic. I’m a front-end developer and designer.</h3>
+    		</div>
+    	</div>
 	</div>
-	<div id="developer">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante diam, hendrerit non risus et, condimentum ornare tortor. Proin tincidunt turpis et interdum vehicula. Phasellus consectetur placerat auctor. Aliquam leo arcu, mattis sit amet eros ac, tempor cursus augue. Maecenas in massa a felis condimentum tempus. Sed tincidunt, massa sit amet mollis placerat, est sem efficitur metus, quis tempus nisi odio quis sapien. Nullam vel suscipit urna, at viverra metus.
-		</p>
+	<div id="developer" class="page-section generic-content-container">
+
+		
+		<div class="wrapper">
+			<h2  class="section-title">Developer</h2>
+
+			<div class="row row--gutters">
+				<div class="row__6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante diam, hendrerit non risus et, condimentum ornare tortor. Proin tincidunt turpis et interdum vehicula. Phasellus consectetur placerat auctor. Aliquam leo arcu, mattis sit amet eros ac, tempor cursus augue. Maecenas in massa a felis condimentum tempus. Sed tincidunt, massa sit amet mollis placerat, est sem efficitur metus, quis tempus nisi odio quis sapien. Nullam vel suscipit urna, at viverra metus.</p>
+				</div>
+				<div class="row__6">
+					<h3>Technical Skills</h3>
+					<ul>
+						<li>HTML5, CSS3 (PostCSS), JavaScript</li>
+						<li>Responsive &amp; mobile layouts</li>
+						<li>Intermediate PHP</li>
+						<li>Basics of Drupal CMS and Zend framework</li>
+						<li>Adobe Photoshop, Illustrator</li>
+						<li>Git collaboration &amp; deployments</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div id="photographer">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante diam, hendrerit non risus et, condimentum ornare tortor. Proin tincidunt turpis et interdum vehicula. Phasellus consectetur placerat auctor. Aliquam leo arcu, mattis sit amet eros ac, tempor cursus augue. Maecenas in massa a felis condimentum tempus. Sed tincidunt, massa sit amet mollis placerat, est sem efficitur metus, quis tempus nisi odio quis sapien. Nullam vel suscipit urna, at viverra metus.
-		</p>
+	<div id="photographer" class="page-section page-section--blue generic-content-container">
+
+		
+		<div class="wrapper">
+			<h2 class="section-title section-title--white">Photographer</h2>
+
+			<div class="row row--gutters">
+				<div class="row__6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante diam, hendrerit non risus et, condimentum ornare tortor. Proin tincidunt turpis et interdum vehicula. Phasellus consectetur placerat auctor. Aliquam leo arcu, mattis sit amet eros ac, tempor cursus augue. Maecenas in massa a felis condimentum tempus. Sed tincidunt, massa sit amet mollis placerat, est sem efficitur metus, quis tempus nisi odio quis sapien. Nullam vel suscipit urna, at viverra metus.</p>
+				</div>
+				<div class="row__6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante diam, hendrerit non risus et, condimentum ornare tortor. Proin tincidunt turpis et interdum vehicula. Phasellus consectetur placerat auctor. Aliquam leo arcu, mattis sit amet eros ac, tempor cursus augue. Maecenas in massa a felis condimentum tempus. Sed tincidunt, massa sit amet mollis placerat, est sem efficitur metus, quis tempus nisi odio quis sapien. Nullam vel suscipit urna, at viverra metus.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div id="baller">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante diam, hendrerit non risus et, condimentum ornare tortor. Proin tincidunt turpis et interdum vehicula. Phasellus consectetur placerat auctor. Aliquam leo arcu, mattis sit amet eros ac, tempor cursus augue. Maecenas in massa a felis condimentum tempus. Sed tincidunt, massa sit amet mollis placerat, est sem efficitur metus, quis tempus nisi odio quis sapien. Nullam vel suscipit urna, at viverra metus.
-		</p>
+	<div id="about" class="page-section generic-content-container">
+
+		
+		<div class="wrapper wrapper--no-padding-until-medium">
+			<h2 class="section-title">About</h2>
+
+			<div class="row row--gutters">
+				<div class="row__6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante diam, hendrerit non risus et, condimentum ornare tortor. Proin tincidunt turpis et interdum vehicula. Phasellus consectetur placerat auctor. Aliquam leo arcu, mattis sit amet eros ac, tempor cursus augue. Maecenas in massa a felis condimentum tempus. Sed tincidunt, massa sit amet mollis placerat, est sem efficitur metus, quis tempus nisi odio quis sapien. Nullam vel suscipit urna, at viverra metus.</p>
+				</div>
+				<div class="row__6">
+					<img src="assets/images/me.jpg">
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<footer>
-		<p>Copyright &copy; 2018 Dusan Koturovic. All rights reserved. <a href="#">Get in Touch</a></p>
+	<footer class="site-footer">
+		<div class="wrapper">
+			<p><span class="site-footer__text">
+			Copyright &copy; 2018 Dusan Koturovic. All rights reserved.</span>
+			<a class="btn btn--white" href="#">Get in Touch</a></p>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>

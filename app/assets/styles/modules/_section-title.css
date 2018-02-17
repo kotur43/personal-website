@@ -1,0 +1,13 @@
+.section-title {
+	text-align: center;
+	color: $skyBlue;
+	font-weight: 400;
+
+	@mixin atMedium {
+		text-align: left;
+	}
+
+	&--white {
+		color: $white;
+	}
+}
