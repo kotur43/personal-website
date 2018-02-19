@@ -476,7 +476,7 @@ img {
 
 .hello__text-content {
 		position: absolute;
-		top: 45%;
+		top: 47%;
 		-webkit-transform: translateY(-50%);
 		        transform: translateY(-50%);
 		left: 0;
@@ -518,6 +518,17 @@ img {
 	}
 	}
 
+.hello__trigger {
+		position: absolute;
+		top: 24%;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		z-index: 5;
+		color: transparent;
+	}
+
 .wrapper {
 	padding-left: 18px;
 	padding-right: 18px;
@@ -552,7 +563,7 @@ img {
 	}
 
 .btn--transparent {
-		background-color: rgba(86, 137, 202, .5);
+		background-color: rgba(86, 137, 202, .75);
 	}
 
 .row::after {
@@ -602,7 +613,7 @@ img {
 	}
 
 .page-section {
-	padding: 1.5rem 0;
+	padding: 4.5rem 0;
 }
 
 .page-section--blue {
@@ -686,6 +697,17 @@ img {
 	}
 	}
 
+@media (min-width: 800px){
+
+.site-header {
+		position: fixed
+}
+
+		.site-header--dark {
+			background-color: rgba(86, 137, 202, .75);
+		}
+	}
+
 .site-header__logo {
 		position: absolute;
 		top: 0;
@@ -695,14 +717,21 @@ img {
 		-webkit-transform-origin: 50% 0%;
 		        transform-origin: 50% 0%;
 		padding: 25px 36px;
+		-webkit-transition: all .5s ease-out;
+		transition: all .5s ease-out;
 	}
 
-@media (min-width: 1010px){
+@media (min-width: 800px){
 
 .site-header__logo {
 			-webkit-transform: translateX(-50%) scale(1.9);
 			        transform: translateX(-50%) scale(1.9)
 	}
+
+			.site-header--dark .site-header__logo {
+				-webkit-transform: translate(-180%, -20%) scale(1);
+				        transform: translate(-180%, -20%) scale(1);
+			}
 	}
 
 @media (min-width: 1010px){
@@ -711,6 +740,11 @@ img {
 			-webkit-transform: translateX(-50%) scale(2.2);
 			        transform: translateX(-50%) scale(2.2)
 	}
+
+			.site-header--dark .site-header__logo {
+				-webkit-transform: translate(-240%, -20%) scale(1);
+				        transform: translate(-240%, -20%) scale(1);
+			}
 	}
 
 .site-header__menu-icon {
@@ -838,6 +872,10 @@ img {
 		background-position: 0 0;
 	}
 
+.primary-nav {
+	padding-top: 10px;
+}
+
 @media (min-width: 800px){
 
 .primary-nav--pull-right {
@@ -880,13 +918,21 @@ img {
 		font-size: .8rem;
 		background-color: transparent;
 		border: 1px solid rgba(255,255,255,.95);
+
+
 	}
 
 @media (min-width: 800px){
 
 .primary-nav a {
-			padding: 3rem 0 12px 0;
+			padding: 4px 0;
 			font-size: 1rem;
 			border: none
+
+
 	}
+
+			.primary-nav a.is-current-link {
+			color: yellow;
+			}
 	}

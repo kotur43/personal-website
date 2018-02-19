@@ -1,4 +1,5 @@
 .primary-nav {
+	padding-top: 10px;
 
 
 	&--pull-right {
@@ -37,9 +38,15 @@
 		border: 1px solid $white;
 
 		@mixin atMedium {
-			padding: 3rem 0 12px 0;
+			padding: 4px 0;
 			font-size: 1rem;
 			border: none;
+
+			&.is-current-link {
+			color: yellow;
+			}
 		}
+
+
 	}
 }
