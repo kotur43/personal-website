@@ -1,0 +1,28 @@
+.section-list {
+
+	&__title {
+		color: $skyBlue;
+		font-weight: 400;
+		font-size: 1.4rem;
+		text-align: center;
+
+		@mixin atMedium {
+			padding-left: 30px;
+			text-align: left;
+		}
+
+	}
+
+	ul {
+		padding-left: 20px;
+	}
+
+	li {
+		line-height: 1.5;
+		font-weight: 300;
+
+		@mixin atMedium {
+			font-size: 1.125rem;
+		}
+	}
+}

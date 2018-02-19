@@ -5,7 +5,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 class StickyHeader {
 	constructor() {
 		this.siteHeader = $(".site-header");
-		this.headerTriggerElement = $(".hello__trigger");
+		this.headerTriggerElement = $(".hello__title");
 		this.createHeaderWaypoint();
 		this.pageSections = $(".page-section");
 		this.headerLinks = $(".primary-nav a");
@@ -28,7 +28,8 @@ class StickyHeader {
 				} else {
 					that.siteHeader.removeClass("site-header--dark");
 				}
-			}
+			},
+				offset: "25%"
 		});
 	}
 

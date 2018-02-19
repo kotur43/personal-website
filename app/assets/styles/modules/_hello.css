@@ -39,14 +39,4 @@
 			font-size: 1.4rem;
 		}
 	}
-
-	&__trigger {
-		position: absolute;
-		top: 24%;
-		transform: translateY(-50%);
-		left: 0;
-		width: 100%;
-		z-index: 5;
-		color: transparent;
-	}
 }

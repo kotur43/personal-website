@@ -2,6 +2,7 @@
 	text-align: center;
 	color: $skyBlue;
 	font-weight: 400;
+	padding-bottom: 2rem;
 
 	@mixin atMedium {
 		text-align: left;

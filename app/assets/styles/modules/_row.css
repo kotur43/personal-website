@@ -33,11 +33,31 @@
 		margin-bottom: 1rem;
 	}
 
+	
+	&--pull-up-row {
+
+		@mixin atMedium {
+			margin-top: -68px;
+		}
+	}
+
 	@mixin atMedium {
 		
-		&__6 {
+		&__medium-6 {
 			float: left;
 			width: 50%;
 		}
+
+		&__medium-6-smaller {
+			float: left;
+			width: 40%;
+		}
+
+		&__medium-6-larger {
+			float: left;
+			width: 60%	
+		}
 	}
+
+
 }

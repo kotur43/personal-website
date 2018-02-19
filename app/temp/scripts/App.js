@@ -10542,7 +10542,7 @@ var StickyHeader = function () {
 		_classCallCheck(this, StickyHeader);
 
 		this.siteHeader = (0, _jquery2.default)(".site-header");
-		this.headerTriggerElement = (0, _jquery2.default)(".hello__trigger");
+		this.headerTriggerElement = (0, _jquery2.default)(".hello__title");
 		this.createHeaderWaypoint();
 		this.pageSections = (0, _jquery2.default)(".page-section");
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");
@@ -10567,7 +10567,8 @@ var StickyHeader = function () {
 					} else {
 						that.siteHeader.removeClass("site-header--dark");
 					}
-				}
+				},
+				offset: "25%"
 			});
 		}
 	}, {
