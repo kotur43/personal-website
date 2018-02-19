@@ -2,19 +2,28 @@
 
 
 	&--pull-right {
-		float: right;
+
+		@mixin atMedium {
+			float: right;
+		}
 	}
 
 	ul {
-		margin: 0;
+		margin: 0 0 10px 0;
 		padding: 0;
 		@mixin clearfix;
 	}
 
 	li {
 		list-style: none;
-		float: left;
-		padding-right: 20px;
+		display: inline-block;
+		padding-right: 7px;
+
+		@mixin atMedium {
+			padding-right: 20px;
+			float: left;
+			display: block;
+		}
 	}
 
 	a {
@@ -22,6 +31,15 @@
 		font-weight: 300;
 		text-decoration: none;
 		display: block;
-		padding: 12px 0;
+		padding: 5px 8px;
+		font-size: .8rem;
+		background-color: transparent;
+		border: 1px solid $white;
+
+		@mixin atMedium {
+			padding: 3rem 0 12px 0;
+			font-size: 1rem;
+			border: none;
+		}
 	}
 }
