@@ -1203,3 +1203,42 @@ html.lb-disable-scrolling {
 .lb-cancel {
   background: url(../../assets/images/loading.gif) no-repeat;
 }
+
+.lightbox--images {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 530px){
+
+.lightbox--images {
+		margin-bottom: 0px
+}
+	}
+
+.lightbox--images img {
+		width: 100px;
+		border: 2px;
+		border-radius: 15px;
+		margin: 2px;
+	}
+
+@media (min-width: 530px){
+
+.lightbox--images img {
+			width: 120px
+	}
+	}
+
+@media (min-width: 800px){
+
+.lightbox--images img {
+			width: 140px
+	}
+	}
+
+@media (min-width: 1010px){
+
+.lightbox--images img {
+			width: 160px
+	}
+	}

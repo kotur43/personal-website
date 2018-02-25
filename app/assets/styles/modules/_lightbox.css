@@ -17,3 +17,31 @@
 .lb-cancel {
   background: url(../../assets/images/loading.gif) no-repeat;
 }
+
+.lightbox--images {
+	margin-bottom: 20px; 
+
+	@mixin atSmall {
+		margin-bottom: 0px;
+	}
+
+	img {
+		width: 100px;
+		border: 2px;
+		border-radius: 15px;
+		margin: 2px;
+
+
+		@mixin atSmall {
+			width: 120px; 
+		}
+
+		@mixin atMedium {
+			width: 140px;
+		}
+
+		@mixin atLarge {
+			width: 160px;
+		}
+	}
+}
